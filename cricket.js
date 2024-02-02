@@ -84,17 +84,17 @@ function editPlayer(){
     .then((result)=> {
         var myObj=result.data;
         console.log(myObj);
-        document.getElementById("id1").textContent=myObj.name;
-        document.getElementById("id2").textContent=myObj.dob;
-        document.getElementById("id3").textContent=myObj.imgUrl;
-        document.getElementById("id4").textContent=myObj.birthPlace;
-        document.getElementById("id5").textContent=myObj.career;
-        document.getElementById("id6").textContent=myObj.matches;
-        document.getElementById("id7").textContent=myObj.score;
-        document.getElementById("id8").textContent=myObj.fifties;
-        document.getElementById("id9").textContent=myObj.centuries;
-        document.getElementById("id10").textContent=myObj.wickets;
-        document.getElementById("id11").textContent=myObj.average;
+        document.getElementById("id1").value=myObj.name;
+        document.getElementById("id2").value=myObj.dob;
+        document.getElementById("id3").value=myObj.imgUrl;
+        document.getElementById("id4").value=myObj.birthPlace;
+        document.getElementById("id5").value=myObj.career;
+        document.getElementById("id6").value=myObj.matches;
+        document.getElementById("id7").value=myObj.score;
+        document.getElementById("id8").value=myObj.fifties;
+        document.getElementById("id9").value=myObj.centuries;
+        document.getElementById("id10").value=myObj.wickets;
+        document.getElementById("id11").value=myObj.average;
 
 
     })
