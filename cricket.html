@@ -31,28 +31,28 @@
         <!-- <p style="text-align: center;">Book a call slot and our representation with call you within 1hr of selected time</p><hr> -->
         <label>Name:</label>
         <br>
-        <input type="text" name="Name" id="id1"  required style="width: 95%; margin-left: 1%;"/><br>
+        <input type="text" name="name" id="id1"  required style="width: 95%; margin-left: 1%;"/><br>
         <label>Date of Birth:</label><br>
-        <input type="text"  name="DOB" id="id2" required style="width: 95%;  margin-left: 1%;"/><br>
+        <input type="text"  name="dob" id="id2" required style="width: 95%;  margin-left: 1%;"/><br>
         <label>Photo Url:</label><br>
-        <input type="url" name="ImgUrl" id="id3" required style="width: 95%;  margin-left: 1%;"/><br>
+        <input type="url" name="imgUrl" id="id3" required style="width: 95%;  margin-left: 1%;"/><br>
         <label>Birthplace:</label><br>
-        <input type="text"  name="Place" id="id4"  required style="width: 95%;  margin-left: 1%;"/><br>
+        <input type="text"  name="place" id="id4"  required style="width: 95%;  margin-left: 1%;"/><br>
         <label>Career:</label><br>
-        <textarea name="Career" id="id5" cols="85" rows="10"></textarea>
+        <textarea name="career" id="id5" cols="85" rows="10"></textarea>
         <!-- <input type="text"  name="Career" id="id5" value="e" required style="width: 95%;  margin-left: 1%;"/><br> -->
         <label>Number of Matches:</label><br>
-        <input type="text"  name="Matches" id="id6"  required style="width: 95%;  margin-left: 1%;"/><br>
+        <input type="text"  name="matches" id="id6"  required style="width: 95%;  margin-left: 1%;"/><br>
         <label>Score:</label><br>
-        <input type="text"  name="Score" id="id7"  required style="width: 95%;  margin-left: 1%;"/><br>
+        <input type="text"  name="score" id="id7"  required style="width: 95%;  margin-left: 1%;"/><br>
         <label>Fifties:</label><br>
-        <input type="text"  name="Fifties" id="id8"  required style="width: 95%;  margin-left: 1%;"/><br>
+        <input type="text"  name="fifties" id="id8"  required style="width: 95%;  margin-left: 1%;"/><br>
         <label>Centuries:</label><br>
-        <input type="text"  name="Centuries" id="id9"  required style="width: 95%;  margin-left: 1%;"/><br>
+        <input type="text"  name="centuries" id="id9"  required style="width: 95%;  margin-left: 1%;"/><br>
         <label>Wickets:</label><br>
-        <input type="text"  name="Wickets" id="id10"  required style="width: 95%;  margin-left: 1%;"/><br>
+        <input type="text"  name="wickets" id="id10"  required style="width: 95%;  margin-left: 1%;"/><br>
         <label>Average:</label><br>
-        <input type="text"  name="Average" id="id11"  required style="width: 95%;  margin-left: 1%;"/><br>
+        <input type="text"  name="average" id="id11"  required style="width: 95%;  margin-left: 1%;"/><br>
        
         <!-- <div>
             <label>Time for Call</label><br>
@@ -70,11 +70,11 @@
 
 <form id="form"> 
     <input type="search" id="query" name="q" placeholder="Search...">
-    <button>Search</button>
+    <input onclick="search()" type="button" value="Search" id="id12">
   </form>
   
-    <ul id="list-items"></ul>
+    <div id="playerDetails"></div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.0/axios.min.js"></script>
-    <script src="form.js"></script>
+    <script src="cricket.js"></script>
 </body>
 </html>
