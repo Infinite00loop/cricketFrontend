@@ -1,4 +1,5 @@
 var playerDetailsDiv=document.getElementById('playerDetails');
+var anonymousId;
 function onsignup(){
     var name_=document.getElementById('id1').value;
     var dob_=document.getElementById('id2').value;
@@ -25,13 +26,16 @@ function onsignup(){
         wickets: wickets_,
         average: average_
     };
-
-    axios.post('http://localhost:5000/insert-cricket',myObj)
-    .then((res)=> console.log(res))
-    .catch((err)=> console.log(err)); 
-
-    
-
+    if(anonymousId == undefined){
+        axios.post('http://localhost:5000/insert-cricket',myObj)
+        .then((res)=> console.log(res))
+        .catch((err)=> console.log(err)); 
+    }
+    else{
+        axios.put(`http://localhost:5000/update-cricket/${anonymousId}`,myObj)
+        .then((res)=> console.log(res))
+        .catch((err)=> console.log(err));  
+    }
 }
 
 function search(){
@@ -39,7 +43,6 @@ function search(){
     console.log("searching...");
     axios.get(`http://localhost:5000/get-cricket/${player_}`)
     .then((result)=> {
-        
         console.log(result.data);
         displayPlayer(result.data)
 
@@ -84,6 +87,7 @@ function editPlayer(){
     .then((result)=> {
         var myObj=result.data;
         console.log(myObj);
+        anonymousId=myObj.id;
         document.getElementById("id1").value=myObj.name;
         document.getElementById("id2").value=myObj.dob;
         document.getElementById("id3").value=myObj.imgUrl;
@@ -100,4 +104,3 @@ function editPlayer(){
     })
     .catch((err)=> console.log(err));      
 }
-
