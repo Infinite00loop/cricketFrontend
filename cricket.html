@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Document</title>
+    <style>
+        form{
+            margin-right: 25%;
+            margin-left: 25%;
+            width:50%;
+            border: groove;
+        }
+        h1{
+            text-align:center ;
+            color: #ffa500;
+        }
+        label{
+            margin-left: 1%;
+        }
+        
+        
+    </style>
+</head>
+
+<body>
+    
+    <form action="#"  >
+        <h1 >Player Information</h1>
+        <!-- <p style="text-align: center;">Book a call slot and our representation with call you within 1hr of selected time</p><hr> -->
+        <label>Name:</label>
+        <br>
+        <input type="text" name="Name" id="id1"  required style="width: 95%; margin-left: 1%;"/><br>
+        <label>Date of Birth:</label><br>
+        <input type="text"  name="DOB" id="id2" required style="width: 95%;  margin-left: 1%;"/><br>
+        <label>Photo Url:</label><br>
+        <input type="url" name="ImgUrl" id="id3" required style="width: 95%;  margin-left: 1%;"/><br>
+        <label>Birthplace:</label><br>
+        <input type="text"  name="Place" id="id4"  required style="width: 95%;  margin-left: 1%;"/><br>
+        <label>Career:</label><br>
+        <textarea name="Career" id="id5" cols="85" rows="10"></textarea>
+        <!-- <input type="text"  name="Career" id="id5" value="e" required style="width: 95%;  margin-left: 1%;"/><br> -->
+        <label>Number of Matches:</label><br>
+        <input type="text"  name="Matches" id="id6"  required style="width: 95%;  margin-left: 1%;"/><br>
+        <label>Score:</label><br>
+        <input type="text"  name="Score" id="id7"  required style="width: 95%;  margin-left: 1%;"/><br>
+        <label>Fifties:</label><br>
+        <input type="text"  name="Fifties" id="id8"  required style="width: 95%;  margin-left: 1%;"/><br>
+        <label>Centuries:</label><br>
+        <input type="text"  name="Centuries" id="id9"  required style="width: 95%;  margin-left: 1%;"/><br>
+        <label>Wickets:</label><br>
+        <input type="text"  name="Wickets" id="id10"  required style="width: 95%;  margin-left: 1%;"/><br>
+        <label>Average:</label><br>
+        <input type="text"  name="Average" id="id11"  required style="width: 95%;  margin-left: 1%;"/><br>
+       
+        <!-- <div>
+            <label>Time for Call</label><br>
+            <input type="date" name="" id="id4" value="2020-12-12" style="width:50%;  margin-left: 1%;">
+            <input type="time" name="" id="id5" value="11:30" style="width: 44%;" >
+        </div><br> -->
+        
+        <input onclick="onsignup()" type="button" value="Submit" style=" margin-left: 1%;color:white; background-color: #ffa500; width: 97%; border-style: hidden; margin-bottom: 2%; border-radius: 2px ;">
+        <br>
+    </form>
+    <!-- Load icon library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!-- The form -->
+
+<form id="form"> 
+    <input type="search" id="query" name="q" placeholder="Search...">
+    <button>Search</button>
+  </form>
+  
+    <ul id="list-items"></ul>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.0/axios.min.js"></script>
+    <script src="form.js"></script>
+</body>
+</html>
